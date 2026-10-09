@@ -1,22 +1,24 @@
-# 柒柒壹截图工具（独立版）
+# 771 Screenshot Tool（独立版）
 
 从 **柒柒壹工具箱** 里单独拆出来的截图工具：**只有一个 exe，双击即用**，不依赖工具箱、也不用安装任何东西。
 常驻后台，随时用快捷键截图。
-注:该软件为100%AI
 
-当前版本：**v1.17**（2026-10-09）· Windows 10 / 11（64 位）
+当前版本：**v1.18**（2026-10-09）· Windows 10 / 11（64 位）
+
+> 2026-10-09 起本工具改名：原名「柒柒壹截图工具」→ **771 Screenshot Tool**，
+> 仓库也从 `771JIETU` 迁到 `771ScreenshotTool`，exe 文件名 `771ScreenshotTool.exe`。
+> 老版的开机自启项会在新版本里自动迁移到新名字。
 
 ## 下载
 
-到 [Releases](https://github.com/L1ngYueSheng/771JIETU/releases) 页面：
+到 [Releases](https://github.com/L1ngYueSheng/771ScreenshotTool/releases) 页面：
 
 | 文件 | 说明 |
 | --- | --- |
-| `771JIETU.exe` | 单文件，双击即用（建议放到一个固定目录，比如 `D:\RJIAN\GJU\JT`，并改名为「柒柒壹截图工具.exe」） |
-| `771JIETU_v1.17.zip` | 上面那个 exe + 使用说明（想连说明一起保存就下这个） |
+| `771ScreenshotTool.exe` | 单文件，双击即用（建议放到固定目录，例如 `D:\RJIAN\GJU\JT`） |
+| `771ScreenshotTool_v1.18.zip` | 上面那个 exe + 使用说明（想连说明一起保存就下这个） |
 
-> 资产名只能是 ASCII，所以这里叫 `771JIETU.exe`；zip 解开后里面的文件名是中文的
-> 「柒柒壹截图工具.exe」+「使用说明.txt」。
+> 资产名只能是 ASCII（GitHub 会把非 ASCII 字符剥掉），所以这里叫 `771ScreenshotTool.exe`。
 
 ## 快捷键（默认值，可在界面里改）
 
@@ -39,14 +41,14 @@
 - **贴图**：把截图钉在桌面上，可拖动、拖任意边或角改大小、`Ctrl+滚轮` 调透明度。
 - 截图后自动复制到剪贴板，并可在界面里改保存目录（文件名为 `shot_年月日_时分秒.png`）。
 
-配置与热键存在 `%APPDATA%\柒柒壹工具箱\screenshot_cfg.json`，程序本身不往注册表里写东西。
+配置与热键存在 `%APPDATA%\柒柒壹工具箱\screenshot_cfg.json`；开机自启会在
+`HKCU\Software\Microsoft\Windows\CurrentVersion\Run` 里写一条名为 `771 Screenshot Tool` 的启动项。
 
 ## 最近几版
 
-- **v1.17** 体积优化：单文件 **12.9 MB**（原来 20.2 MB），摘掉用不到的 AVIF 插件与整条网络栈；功能未动。
-- **v1.16** 标注工具栏上的点击不再漏进画面（点颜色块/按钮不会再在左上角画出序号或弹出输入框）；含 v1.15 的箭头尖头与矩形/椭圆的形状预览。
-- **v1.14** 修「全屏/区域截图隐藏时闪两下」。
-- **v1.13** 热键去抖：同一快捷键连按只算一次。
+- **v1.18** 改名：产品名与窗口标题 → `771 Screenshot Tool`，exe → `771ScreenshotTool.exe`；开机自启项自动迁移。
+- **v1.17** 体积优化：单文件 **12.9 MB**（原 20.2 MB），摘掉用不到的 AVIF 插件与整条网络栈，功能未动。
+- **v1.16** 标注工具栏上的点击不再漏进画面（点颜色块/按钮不会再在左上角画出序号或弹出输入框）。
 
 ## 相关
 
